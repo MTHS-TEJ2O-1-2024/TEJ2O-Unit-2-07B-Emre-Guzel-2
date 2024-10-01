@@ -11,12 +11,12 @@ let cocikeNumber=+1
 let cocikeRest=0
 basic.showIcon(IconNames.Happy)
 input.onButtonPressed(Button.B,function(){
-    cocikeRest=0
-    basic.showNumber(0)
+    cocikeRest=0 
+    basic.showNumber(cocikeRest),+control.reset()
 })
 input.onButtonPressed(Button.A,function(){
- cocikeNumber += 1
- basic.showNumber(1)
+ cocikeNumber +=1
+ basic.showNumber(cocikeNumber -1)
 })
 
 
